@@ -102,7 +102,7 @@ class ISONET:
                 assert len(files) == num_tomo
                 data.append(files)
             else:
-                if type(default_val) == list:
+                if isinstance(default_val, list):
                     if len(default_val) == 1:
                         data.append(default_val * num_tomo)
                     else:
